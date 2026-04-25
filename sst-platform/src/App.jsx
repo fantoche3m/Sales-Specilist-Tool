@@ -202,7 +202,7 @@ function ToolCard({ tool, index }) {
           color: tool.accent, fontSize: 9, fontWeight: 700,
           padding: "3px 10px", borderRadius: 20,
           letterSpacing: "0.1em", fontFamily: "'Rajdhani', sans-serif",
-        }}></div>
+        }}>Em breve</div>
       )}
 
       {/* Tag */}
