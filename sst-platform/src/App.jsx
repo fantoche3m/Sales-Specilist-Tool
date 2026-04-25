@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 // ─────────────────────────────────────────────────────────────────────────────
 const TOOL_URLS = {
   wincc:   "https://win-cc-unified-configurator-2-0.vercel.app/",   // ← substitua pela URL do WinCC Configurator
-  plc:     null,                                   // Em breve
+  plc:     "https://plc-license-configurator.vercel.app/",                                   // Em breve
   network: null,                                   // Em breve
   pptx:    null,                                   // Em breve
 };
@@ -32,7 +32,7 @@ const TOOLS = [
     desc: "Configure licenças para CLPs das famílias S7-1200 e S7-1500, TIA Portal e módulos de expansão com precisão.",
     features: ["S7-1200 / S7-1500", "TIA Portal ES", "Motion Control", "Safety F-CPU"],
     accent: "#1a6fad",
-    soon: true,
+    soon: false,
   },
   {
     key: "network",
@@ -202,7 +202,7 @@ function ToolCard({ tool, index }) {
           color: tool.accent, fontSize: 9, fontWeight: 700,
           padding: "3px 10px", borderRadius: 20,
           letterSpacing: "0.1em", fontFamily: "'Rajdhani', sans-serif",
-        }}>EM BREVE</div>
+        }}></div>
       )}
 
       {/* Tag */}
