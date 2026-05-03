@@ -6,7 +6,7 @@ import { useState, useEffect, useRef } from "react";
 const TOOL_URLS = {
   wincc:   "https://win-cc-unified-configurator-2-0.vercel.app/",   // ← substitua pela URL do WinCC Configurator
   plc:     "https://plc-license-configurator.vercel.app/",                                   // Em breve
-  network: null,                                   // Em breve
+  network: "https://network-architect.vercel.app/",                                   // Em breve
   pptx:    null,                                   // Em breve
 };
 // ─────────────────────────────────────────────────────────────────────────────
@@ -43,7 +43,7 @@ const TOOLS = [
     desc: "Monte arquiteturas de rede industriais com componentes Siemens reais e exporte diagramas técnicos em PDF estilo CAD.",
     features: ["PROFINET / Modbus / EtherNet/IP", "Web Server (HTTP/HTTPS)", "Estilo CAD técnico", "Exportação PDF"],
     accent: "#00aa66",
-    soon: true,
+    soon: false,
   },
   {
     key: "pptx",
